@@ -1,15 +1,13 @@
 import React from "react";
+import {Link} from "react-router-dom"
+
 function NavigationBar() {
   return (
     <nav className="Navi">
-      <a href="/" className="sit-tite">
+      
+      <Link to="/Home">
         Home
-      </a>
-      <ul>
-        <li>
-          <a href="/Favorite">Favorite</a>
-        </li>
-      </ul>
+      </Link>
     </nav>
   );
 }

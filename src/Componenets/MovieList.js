@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-
+import {Link} from "react-router-dom"
 export const MovieList = ({ Data }) => {
   return (
     <div
@@ -12,8 +12,8 @@ export const MovieList = ({ Data }) => {
         backgroundColor: "rgb(117, 105, 105)",
       }}
     >
-      {Data.map((movie) => (
-        <MovieCard movie={movie} key={movie.id} />
+      {Data.map((movie) => (<Link to={`/Details/${movie.id}`}>
+        <MovieCard movie={movie} key={movie.id} /></Link>
       ))}
     </div>
   );

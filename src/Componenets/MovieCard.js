@@ -1,9 +1,7 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 
@@ -19,12 +17,12 @@ export default function MediaCard({ movie }) {
       />
       <CardContent className="content">
         <Typography gutterBottom variant="h5" component="div">
-          {movie.titel}
+          {movie.title}
         </Typography>
         <Typography component="legend"></Typography>
         <Rating name="simple-controlled" value={movie.rate} />
 
-        <Button> Description </Button>
+        
       </CardContent>
     </Card>
   );
